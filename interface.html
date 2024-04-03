@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Sign up</h2>
+        <form action="/submit_signup" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="pwd" name="pwd" required pattern=".{8,}"><br>
+            <label for="cpwd">Confirm Password:</label><br>
+            <input type="password" id="cpwd" name="cpwd" required pattern=".{8,}"><br>
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required><br>
+            <label for="gender">Gender:</label><br>
+            <select id="gender" name="gender" required>
+                <option value=""></option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select><br>
+            <label for="photo">Insert your photo:</label><br>
+            <input type="file" id="photo" name="photo"><br>
+            <label for="resume">Insert your resume:</label><br>
+            <input type="file" id="resume" name="resume"><br>
+            <label for="security">Security Question:</label><br>
+            <select id="security" name="security" required>
+                <option value=""></option>
+                <!-- Add options for security questions here -->
+            </select><br>
+            <input type="checkbox" id="agree" name="agree" required><label for="agree">I agree terms and conditions</label><br>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+</html>
